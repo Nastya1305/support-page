@@ -148,6 +148,9 @@ main > :not(:last-child) {
   height: 15px;
   width: 15px;
 }
+.button:focus {
+  outline: 2px solid #949494;
+}
 .button--white {
   background-color: #fff;
   color: #1a1a1a;
@@ -161,8 +164,16 @@ main > :not(:last-child) {
 .button--white:hover .button__icon {
   fill: #36ba5f;
 }
-.button--white:focus {
-  outline: 2px solid #949494;
+.button--green {
+  width: 224px;
+  background-color: #36ba5f;
+  color: #fff;
+}
+.button--green .button__icon {
+  fill: #fff;
+}
+.button--green:hover {
+  background-color: #93bbea;
 }
 
 .small-button {
@@ -174,8 +185,11 @@ main > :not(:last-child) {
 }
 .small-button__icon {
   fill: #36ba5f;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.small-button__icon--with-padding {
+  padding: 16px;
 }
 .small-button:hover {
   background-color: #36ba5f;
@@ -422,16 +436,18 @@ main > :not(:last-child) {
 }
 
 .card {
+  overflow: hidden;
   padding: 16px;
   width: 282px;
   border-radius: 16px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
   display: grid;
   grid-template-columns: minmax(0, max-content) auto;
-  grid-template-rows: auto 100%;
+  grid-template-rows: auto 1fr;
   grid-template-areas: "title img" "subtitle img";
 }
 .card__img {
+  height: 160px;
   grid-area: img;
   margin-right: -16px;
 }
@@ -514,4 +530,47 @@ main > :not(:last-child) {
 }
 .reference-card__arrow-icon:hover {
   fill: #36ba5f;
+}
+
+.article {
+  padding: 22px 0 80px;
+}
+.article__header {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.article__title {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 120%;
+}
+.article__share-btn {
+  cursor: pointer;
+  background-color: #fff;
+  border: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+}
+.article__share-icon {
+  width: 100%;
+  height: 100%;
+  fill: #36ba5f;
+}
+.article__text {
+  max-width: 690px;
+  font-size: 15px;
+  line-height: 140%;
+  margin-bottom: 40px;
+}
+.article__subtitle {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+.article__btns {
+  display: flex;
+  gap: 8px;
 }

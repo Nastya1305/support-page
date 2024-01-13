@@ -20,6 +20,10 @@
       width: 15px;
    }
 
+   &:focus {
+      outline: 2px solid $dark-gray;
+   }
+
    &--white {
       background-color: $white;
       color: $black;
@@ -35,9 +39,19 @@
             fill: $green;
          }
       }
+   }
 
-      &:focus {
-         outline: 2px solid $dark-gray;
+   &--green {
+      width: 224px;
+      background-color: $green;
+      color: $white;
+
+      .button__icon {
+         fill: $white;
+      }
+
+      &:hover {
+         background-color: $light-blue;
       }
    }
 }

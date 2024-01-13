@@ -1,0 +1,48 @@
+.article {
+   padding: 22px 0 80px;
+
+   &__header {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+   }
+
+   &__title {
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 120%;
+   }
+
+   &__share-btn {
+      cursor: pointer;
+      background-color: $white;
+      border: 0;
+      padding: 0;
+      width: 24px;
+      height: 24px;
+   }
+   &__share-icon {
+      width: 100%;
+      height: 100%;
+      fill: $green;
+   }
+
+   &__text {
+      max-width: 690px;
+      font-size: 15px;
+      line-height: 140%;
+      margin-bottom: 40px;
+   }
+
+   &__subtitle {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 120%;
+      margin-bottom: 16px;
+   }
+
+   &__btns {
+      display: flex;
+      gap: 8px;
+   }
+}
