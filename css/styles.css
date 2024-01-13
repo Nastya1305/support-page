@@ -236,7 +236,7 @@ main > :not(:last-child) {
 .support-block::before {
   content: "";
   display: block;
-  background-image: url("../img/telegram.png");
+  background-image: url("img/telegram.png");
   height: 196px;
   width: 263px;
   position: absolute;
@@ -259,7 +259,7 @@ main > :not(:last-child) {
 .support-block::after {
   content: "";
   display: block;
-  background-image: url("../img/hand-with-phone.png");
+  background-image: url("img/hand-with-phone.png");
   width: 277px;
   height: 226px;
   position: absolute;
