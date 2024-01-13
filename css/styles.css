@@ -445,6 +445,7 @@ main > :not(:last-child) {
   font-size: 20px;
   font-weight: 700;
   line-height: 120%;
+  color: #1a1a1a;
   margin-bottom: 8px;
 }
 
