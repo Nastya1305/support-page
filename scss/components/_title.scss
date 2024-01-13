@@ -1,0 +1,9 @@
+.title {
+   font-size: 40px;
+   line-height: 120%;
+   font-weight: 700;
+
+   @media (max-width: $media4 + px) {
+      font-size: 30px;
+   }
+}

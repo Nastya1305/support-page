@@ -1,0 +1,110 @@
+.support-block {
+   position: relative;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   padding: 40px 20px 54px 20px;
+   border-radius: 40px;
+   background-color: $light-blue;
+
+   overflow: hidden;
+
+   @media (max-width: $media4 + px) {
+      padding: 20px 20px 25px 20px;
+   }
+
+   &__title {
+      color: $white;
+      font-size: 60px;
+      line-height: 120%;
+      font-weight: 900;
+      text-align: center;
+
+      margin-bottom: 4px;
+
+      @media (max-width: 635px) {
+         font-size: 36px;
+      }
+   }
+
+   &__subtitle {
+      max-width: 535px;
+
+      color: $white;
+      font-size: 17px;
+      text-align: center;
+
+      margin-bottom: 40px;
+   }
+
+   &::before {
+      content: "";
+      display: block;
+      background-image: url("/img/telegram.png");
+      height: 196px;
+      width: 263px;
+
+      position: absolute;
+      left: 0;
+      top: 12%;
+
+      @media (max-width: $media1 + px) {
+         top: 20%;
+         height: 131px;
+         width: 175px;
+         background-size: 175px 131px;
+      }
+
+      @media (max-width: $media2 + px) {
+         display: none;
+      }
+   }
+
+   &::after {
+      content: "";
+      display: block;
+      background-image: url("/img/hand-with-phone.png");
+      width: 277px;
+      height: 226px;
+
+      position: absolute;
+      right: 0;
+      bottom: -9px;
+
+      @media (max-width: $media1 + px) {
+         height: 151px;
+         width: 185px;
+         background-size: 185px 151px;
+      }
+
+      @media (max-width: $media2 + px) {
+         display: none;
+      }
+   }
+}
+
+.communications {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+
+   @media (max-width: $media3 + px) {
+      flex-direction: column;
+      align-items: center;
+
+      max-height: 100px;
+
+      &__item {
+         flex: 0 1 50%;
+      }
+   }
+
+   @media (max-width: $media4 + px) {
+      max-height: none;
+      &__item {
+         flex: 0 1 100%;
+      }
+   }
+}
