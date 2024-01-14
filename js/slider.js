@@ -25,6 +25,8 @@ function changeSlide() {
       activeSlideIndex = 0;
    }
 
+   addCloneToEnd(1, slides);
+
    list.animate([
       { transform: `translateX(0)` },
       { transform: `translateX(-${slideWidth}px)` },
@@ -34,7 +36,7 @@ function changeSlide() {
       fill: "forwards"
    });
 
-   addCloneToEnd(1, slides);
+
    slides[0].parentNode.removeChild(slides[0]);
 }
 
