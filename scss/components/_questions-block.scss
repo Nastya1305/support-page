@@ -10,11 +10,15 @@
 
 .slider {
    position: relative;
+   height: 216px;
+   width: 100%;
+   overflow: hidden;
 
    &__next-btn {
       position: absolute;
       right: 0;
       top: 50%;
+      z-index: 10;
       transform: translateY(-50%);
       cursor: pointer;
       width: 44px;
@@ -36,6 +40,9 @@
    }
 
    &__list {
+      position: absolute;
+      top: 0;
+      left: 0;
       display: flex;
       overflow: hidden;
       margin: 0 -12px;
